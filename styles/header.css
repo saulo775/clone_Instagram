@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 16px 208px;
+}
+
+.logomarcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
