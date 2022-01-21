@@ -1,21 +1,29 @@
 .header {
     display: flex;
+    justify-content: center;
+
     background-color: var(--shape);
     width: 100%;
-    justify-content: space-between;
-    padding: 1rem 13rem;
-    align-items: center;
-
+    height: 3.5rem;
     position: fixed;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    width: 58.5rem;
+    align-items: center;
+    margin: 0 1.25rem;
 }
 
 .logomarcas {
     display: flex;
 }
 
-.icon_insta {
-    font-size: 1.3rem;
+.logomarcas ion-icon {
+    font-size: 1.5rem;
 }
+
 
 .spacer {
     background-color: var(--text-title);
