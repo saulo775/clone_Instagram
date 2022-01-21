@@ -1,13 +1,44 @@
 .header {
     display: flex;
+    background-color: var(--shape);
+    width: 100%;
     justify-content: space-between;
+    padding: 1rem 13rem;
     align-items: center;
 
-    margin: 16px 208px;
+    position: fixed;
 }
 
 .logomarcas {
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.icon_insta {
+    font-size: 1.3rem;
+}
+
+.spacer {
+    background-color: var(--text-title);
+    width: 1px;
+    height: 1.5rem;
+    margin: 0 10px;
+    opacity: 0.6;
+}
+
+.search {
+    height: 1.2rem;
+    width: 13.5rem;
+    background-color: var(--background);
+    font-size: 0.75rem;
+
+
+    text-align: center;
+    padding: 1rem 0;
+
+    border: 1.5px solid rgba(75, 75, 75, 0.5);
+    border-radius: 6px;
+}
+
+.menu {
+    font-size: 1.3rem;
 }
