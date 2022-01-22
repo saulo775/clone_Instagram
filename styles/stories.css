@@ -8,10 +8,6 @@
     width: 38rem;
     margin-top:  5.5rem;
 
-    
-   /* background-color: var(--background);*/
-    background-color: rgb(228, 110, 110);
-
     position: relative;
 }
 
@@ -69,19 +65,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
 
-    font-size: 20px;
-    border-radius: 50%;
-    color: rgba(0, 0, 0, 0.6);
-    background-color: white;
-
-    box-shadow: 1px 1px 2px 1px rgb(136, 136, 136);
-
-
+   
     position: absolute;
     right: 8px;
+}
+
+.icon_next_stories ion-icon {
+    color: var(--shape);
+    font-size: 28px;
 }
 
 .content_storie {
@@ -91,17 +83,4 @@
     border: 3px solid var(--shape);
     border-radius: 50%;
 
-}
-
-
-/*=====ESTILO DOS POSTS ======*/
-/*=====ESTILO DOS POSTS ======*/
-/*=====ESTILO DOS POSTS ======*/
-/*=====ESTILO DOS POSTS ======*/
-
-
-.posts {
-    width: 38rem;
-    background-color: blue;
-    height: 700rem;
 }

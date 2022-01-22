@@ -1,13 +1,13 @@
 :root{
     --background: #fafafa;
     --red: #E52e54;
-    --blue: #5429CC;
+    --blue: #2b93f5;
     --green: #33CC95;
 
     --blue-light: #6933FF;
 
-    --text-title: ##4a4a4a;
-    --text-body: #969cb3;
+    --text-title: #313131;
+    --text-body: #BBBBBB;
 
     --shape: #FFFFFF;
 
@@ -53,7 +53,7 @@ a{
     color: currentColor;
 }
 
-button {
+button, a {
     cursor: pointer;
 }
 

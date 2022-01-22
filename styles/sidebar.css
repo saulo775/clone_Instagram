@@ -12,11 +12,155 @@
     margin-left: 1.5rem;
     margin-top: 5.5rem;
 
-    background-color: red;
-
     position: -webkit-sticky;
     position: sticky;
 
     top: 88px;
     z-index: -5;
 }
+
+.user_card {
+    display: flex;
+    align-items: center;
+
+    margin: 1.5rem 0; 
+
+
+    justify-content: space-between;
+}
+
+.user_card a {
+    font-size: 14px;
+    color: var(--blue);
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.user_separator {
+    display: flex;
+    align-items: center;
+}
+
+.user_card img {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    cursor: pointer;
+}
+
+.display_names h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-title);   
+
+    cursor: pointer;
+}
+
+.display_names h4{
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--text-body);   
+    margin-top: 2px;
+}
+
+
+.header_sugestions {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+}
+
+.header_sugestions p {
+    font-size: 14px;
+    color: var(--text-body);
+
+    font-weight: 600;
+}
+
+.header_sugestions a {
+    font-size: 12px;
+    color: var(--text-title);
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card_sugestion {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.card_sugestion a{
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.sugestion_profile {
+    display: flex;
+}
+
+.sugestion_profile img {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.sugestion_profile h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-title);   
+
+    cursor: pointer;
+}
+
+.sugestion_profile h4 {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--text-body);   
+    margin-top: 2px;
+}
+
+.footer_sidebar {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    font-size: 12px;
+    color: var(--text-body);
+}
+
+.links_uteis {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.links_uteis div {  
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    margin: 0 2px;
+
+    background-color: var(--text-body);
+}
+
+.footer_sidebar p {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--text-body);
+}
+
+
