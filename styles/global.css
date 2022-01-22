@@ -33,7 +33,7 @@ html {
 
 body {
     -webkit-font-smooth: antialiased;
-    background-color: var(--background);
+    position: relative;
 }
 
 body, input, textarea, button {
