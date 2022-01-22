@@ -1,6 +1,115 @@
-.content {
-    background-color: royalblue;
-    width: 58.5rem;
-    height: 16px;
+.container {
+    display: flex;
+
+    text-align: center;
+    border-radius: 0.25rem;
+
+    max-width: 58.5rem;
     margin-top:  5.5rem;
+}
+
+.container_posts_and_stories{
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+}
+
+/*=====ESTILO DA BARRA DE STORIES ======*/
+/*=====ESTILO DA BARRA DE STORIES ======*/
+/*=====ESTILO DA BARRA DE STORIES ======*/
+/*=====ESTILO DA BARRA DE STORIES ======*/
+
+.stories_container {
+    display: flex;
+    align-items: center;
+
+    height: 7rem;
+    width: 38rem;
+    padding: 0 7px;
+
+    background-color: var(--shape);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+
+    z-index: 0;
+    position: relative;
+}
+
+.box_stories{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 0;
+
+    margin: 0 7px;
+}
+
+.storie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 66px;
+    height: 66px;
+    background-image: linear-gradient(45deg, #FB9F4E, #C82E90);
+
+    border-radius: 50%;
+}
+
+.owner_storie {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-title);
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.icon_next_stories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+
+    font-size: 20px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: white;
+
+    box-shadow: 1px 1px 2px 1px rgb(136, 136, 136);
+
+
+    position: absolute;
+    right: 8px;
+}
+
+.content_storie {
+    width: 60px;
+    height: 60px;
+
+    border: 3px solid var(--shape);
+    border-radius: 50%;
+}
+
+
+/*=====ESTILO DA SIDEBAR ======*/
+/*=====ESTILO DA SIDEBAR ======*/
+/*=====ESTILO DA SIDEBAR ======*/
+/*=====ESTILO DA SIDEBAR ======*/
+
+
+.sidebar {
+    width: 19rem;
+    margin-left: 1.5rem;
+    
+    background-color: red;
+
+    position: fixed;
+}
+
+
+.posts {
+    width: 38rem;
+    background-color: blue;
+    height: 700rem;
 }
