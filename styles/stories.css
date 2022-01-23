@@ -30,6 +30,8 @@
     border-radius: 4px;
     border: 1px solid var(--border-color);
     overflow: hidden;
+
+    margin-bottom: 0.5rem;
 }
 
 .box_stories{
