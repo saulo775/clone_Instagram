@@ -58,3 +58,16 @@
 .icons_header + .icons_header {
     margin-left: 10px;
 }
+
+
+@media (max-width: 38rem) {
+    .container_header {
+        display: flex;
+    }
+}
+
+@media (min-width: 38rem) {
+    .container_header_mobile {
+        display: none;
+    }
+
