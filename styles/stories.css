@@ -8,7 +8,6 @@
     max-width: 38rem;
     margin-top:  5.5rem;
 
-    background-color: chocolate ;
     position: relative;
     left: 0;
 }
@@ -98,9 +97,4 @@
     .icon_next_stories {
         display: none;
     }
-
-    .container {
-
-    }
-
 }

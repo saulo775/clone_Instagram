@@ -68,7 +68,7 @@
 
 .content_post img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .content_post ion-icon {
@@ -251,4 +251,25 @@
 .footer_post a {
     color: var(--blue);
     font-size: 15px;
+}
+
+
+@media (max-width: 38.5rem) {
+   .card_post {
+       max-width: 100vw;
+   }
+
+   .content_post {
+        max-width: 100vw;
+        height: auto;
+   }
+
+   .input_coment input {
+       width: 50vw;
+
+   }
+
+   .posts {
+       width: 100vw;
+   }
 }
