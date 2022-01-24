@@ -71,6 +71,11 @@
     height: auto;
 }
 
+.content_post video {
+    width: 100%;
+    height: auto;;
+}
+
 .content_post ion-icon {
     font-size: 1.8rem;
     color: white;
@@ -249,8 +254,14 @@
 }
 
 .footer_post a {
-    color: var(--blue);
+    color: var(--publi-button);
     font-size: 15px;
+    transition: 300ms;
+}
+
+.footer_post a:hover {
+    color: #0095F6;
+
 }
 
 
