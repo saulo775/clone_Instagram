@@ -1,0 +1,22 @@
+.footer_mobile {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100vw;
+    padding: 1rem;
+
+    font-size: 22px;
+    border: solid 1px var(--border-color);
+    background-color: var(--background);
+
+    position: fixed;
+    bottom: 0;
+
+    z-index: 2;
+}
+
+@media (min-width: 38.5rem) {
+    .footer_mobile {
+        display: none;
+    }
+}

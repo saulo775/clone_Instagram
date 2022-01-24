@@ -1,10 +1,7 @@
 :root{
-    --background: #fafafa;
-    --red: #E52e54;
+    --background: #FAFAFA;
     --blue: #2b93f5;
-    --green: #33CC95;
 
-    --blue-light: #6933FF;
 
     --text-title: #313131;
     --text-body: #BBBBBB;
@@ -34,6 +31,7 @@ html {
 body {
     -webkit-font-smooth: antialiased;
     position: relative;
+    background-color: var(--background);
 }
 
 body, input, textarea, button {
