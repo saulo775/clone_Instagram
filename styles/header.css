@@ -60,14 +60,34 @@
 }
 
 
-@media (max-width: 38rem) {
-    .container_header {
-        display: flex;
-    }
+/*=====ESTILO D0 HEADER NO MOBILE ======*/
+/*=====ESTILO D0 HEADER NO MOBILE ======*/
+/*=====ESTILO D0 HEADER NO MOBILE ======*/
+/*=====ESTILO D0 HEADER NO MOBILE ======*/
+
+.container_header_mobile {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
 }
 
-@media (min-width: 38rem) {
+.container_header_mobile ion-icon {
+    font-size: 22px;
+}
+
+
+ @media (max-width: 38.5rem) {
+    .container_header {
+        display: none;
+    }
+} 
+
+@media (min-width: 38.5rem) {
     .container_header_mobile {
         display: none;
     }
+}
 
