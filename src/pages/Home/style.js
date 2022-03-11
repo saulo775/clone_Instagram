@@ -103,7 +103,7 @@ export const Content = styled.div`
 
     }
 
-    .post {
+    /* .post {
         border-radius: 3px;
         border: 1px solid #DBDBDB;
         display: flex;
@@ -164,7 +164,7 @@ export const Content = styled.div`
 
     .post:last-child {
         margin-bottom: 18px;
-    }
+    } */
 
     .sidebar {
         padding-top: 24px;

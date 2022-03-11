@@ -7,6 +7,7 @@ import {
 } from './style';
 
 import { Story } from "../../components/Story";
+import { Post } from "../../components/Post";
 
 export function Home() {
     const stories = [
@@ -53,6 +54,25 @@ export function Home() {
 
 
     ];
+
+    const posts = [
+        {
+            sourceImageUser: 'assets/img/meowed.svg',
+            user: 'meowed',
+            postImage: 'assets/img/gato-telefone.svg',
+            likesImage: 'assets/img/respondeai.svg',
+            likeUser: 'respondeai',
+            numLikes: '202.546',
+        },
+        {
+            sourceImageUser: 'assets/img/barked.svg',
+            user: 'barked',
+            postImage: 'assets/img/dog.svg',
+            likesImage: 'assets/img/smallcutecats.svg',
+            likeUser: 'meowed',
+            numLikes: '345.796',
+        },
+    ]
 
     return(
         <>
@@ -108,7 +128,30 @@ export function Home() {
                     </div>
 
                     <div className="posts">
-                    <div className="post">
+                        {
+                            posts.map(({
+                                sourceImageUser,
+                                user,
+                                postImage,
+                                likesImage,
+                                likeUser,
+                                numLikes
+                            }) => {
+                                return(
+                                    <Post
+                                        key={user}
+                                        sourceImageUser={sourceImageUser}
+                                        user={user}
+                                        postImage={postImage}
+                                        likesImage={likesImage}
+                                        likeUser={likeUser}
+                                        numLikes={numLikes}
+                                    />
+                                )
+                            })
+                        }
+
+                    {/* <div className="post">
                         <div className="topo">
                         <div className="usuario">
                             <img src="assets/img/meowed.svg" />
@@ -142,9 +185,9 @@ export function Home() {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="post">
+                    {/* <div className="post">
                         <div className="topo">
                         <div className="usuario">
                             <img src="assets/img/barked.svg" />
@@ -178,17 +221,17 @@ export function Home() {
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
 
                 <div className="sidebar">
                     <div className="usuario">
-                    <img src="assets/img/catanacomics.svg" />
-                    <div className="texto">
-                        <strong>catanacomics</strong>
-                        Catana
-                    </div>
+                        <img src="assets/img/catanacomics.svg" />
+                        <div className="texto">
+                            <strong>catanacomics</strong>
+                            Catana
+                        </div>
                     </div>
 
                     <div className="sugestoes">
@@ -235,11 +278,11 @@ export function Home() {
 
                     <div className="sugestao">
                         <div className="usuario">
-                        <img src="assets/img/adorable_animals.svg" />
-                        <div className="texto">
-                            <div className="nome">adorable_animals</div>
-                            <div className="razao">Segue você</div>
-                        </div>
+                            <img src="assets/img/adorable_animals.svg" />
+                            <div className="texto">
+                                <div className="nome">adorable_animals</div>
+                                <div className="razao">Segue você</div>
+                            </div>
                         </div>
 
                         <div className="seguir">Seguir</div>
@@ -247,11 +290,11 @@ export function Home() {
 
                     <div className="sugestao">
                         <div className="usuario">
-                        <img src="assets/img/smallcutecats.svg" />
-                        <div className="texto">
-                            <div className="nome">smallcutecats</div>
-                            <div className="razao">Segue você</div>
-                        </div>
+                            <img src="assets/img/smallcutecats.svg" />
+                            <div className="texto">
+                                <div className="nome">smallcutecats</div>
+                                <div className="razao">Segue você</div>
+                            </div>
                         </div>
 
                         <div className="seguir">Seguir</div>
