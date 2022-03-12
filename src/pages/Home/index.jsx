@@ -8,6 +8,7 @@ import {
 
 import { Story } from "../../components/Story";
 import { Post } from "../../components/Post";
+import { Sugestion } from "../../components/Sugestion";
 
 export function Home() {
     const stories = [
@@ -71,6 +72,34 @@ export function Home() {
             likesImage: 'assets/img/smallcutecats.svg',
             likeUser: 'meowed',
             numLikes: '345.796',
+        },
+    ]
+
+    const sugestionFollowers = [
+        {
+            userImage: "assets/img/bad.vibes.memes.svg",
+            userName: "bad.vibes.memes",
+            status: "Segue você",
+        },
+        {
+            userImage: "assets/img/chibirdart.svg",
+            userName: "chibirdart",
+            status: "Segue você",
+        },
+        {
+            userImage: "assets/img/razoesparaacreditar.svg",
+            userName: "razoesparaacreditar",
+            status: "Novo no Instagram",
+        },
+        {
+            userImage: "assets/img/adorable_animals.svg",
+            userName: "adorable_animals",
+            status: "Segue você",
+        },
+        {
+            userImage: "assets/img/smallcutecats.svg",
+            userName: "smallcutecats",
+            status: "Segue você",
         },
     ]
 
@@ -235,70 +264,22 @@ export function Home() {
                     </div>
 
                     <div className="sugestoes">
-                    <div className="titulo">
-                        Sugestões para você
-                        <div>Ver tudo</div>
-                    </div>
-
-                    <div className="sugestao">
-                        <div className="usuario">
-                        <img src="assets/img/bad.vibes.memes.svg" />
-                        <div className="texto">
-                            <div className="nome">bad.vibes.memes</div>
-                            <div className="razao">Segue você</div>
+                        <div className="titulo">
+                            Sugestões para você
+                            <div>Ver tudo</div>
                         </div>
-                        </div>
-
-                        <div className="seguir">Seguir</div>
-                    </div>
-
-                    <div className="sugestao">
-                        <div className="usuario">
-                        <img src="assets/img/chibirdart.svg" />
-                        <div className="texto">
-                            <div className="nome">chibirdart</div>
-                            <div className="razao">Segue você</div>
-                        </div>
-                        </div>
-
-                        <div className="seguir">Seguir</div>
-                    </div>
-
-                    <div className="sugestao">
-                        <div className="usuario">
-                        <img src="assets/img/razoesparaacreditar.svg" />
-                        <div className="texto">
-                            <div className="nome">razoesparaacreditar</div>
-                            <div className="razao">Novo no Instagram</div>
-                        </div>
-                        </div>
-
-                        <div className="seguir">Seguir</div>
-                    </div>
-
-                    <div className="sugestao">
-                        <div className="usuario">
-                            <img src="assets/img/adorable_animals.svg" />
-                            <div className="texto">
-                                <div className="nome">adorable_animals</div>
-                                <div className="razao">Segue você</div>
-                            </div>
-                        </div>
-
-                        <div className="seguir">Seguir</div>
-                    </div>
-
-                    <div className="sugestao">
-                        <div className="usuario">
-                            <img src="assets/img/smallcutecats.svg" />
-                            <div className="texto">
-                                <div className="nome">smallcutecats</div>
-                                <div className="razao">Segue você</div>
-                            </div>
-                        </div>
-
-                        <div className="seguir">Seguir</div>
-                    </div>
+                        {
+                            sugestionFollowers.map(({userImage, userName, status}) => {
+                                return (
+                                    <Sugestion
+                                        key={userName}
+                                        userImage={userImage}
+                                        userName={userName}
+                                        status={status}
+                                    />
+                                )
+                            })
+                        }
                     </div>
 
                     <div className="links">
