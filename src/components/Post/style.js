@@ -16,25 +16,28 @@ export const Container = styled.div`
         padding: 13px 16px;
         font-size: 14px;
         font-weight: 500;
+        
+        .usuario,
+        .acoes {
+            display: flex;
+            align-items: center;
+        }
+        
+        img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
     }
 
-    .topo .usuario,  .topo .acoes {
+
+    .usuario,  .topo img,  .fundo img,  ion-icon,  strong {
         display: flex;
         align-items: center;
     }
 
-    .topo img {
-        width: 32px;
-        height: 32px;
-        margin-right: 10px;
-    }
-
-    .usuario,  .topo img,  .fundo img,  ion-icon,  strong {
-        
-    }
-
     .conteudo img {
-        
+        width: 100%;
     }
 
     .fundo .acoes {
@@ -42,6 +45,10 @@ export const Container = styled.div`
         justify-content: space-between;
         padding: 13px 16px;
         font-size: 24px;
+
+        div {
+            display: flex;
+        }
     }
 
     .fundo .acoes div:first-child ion-icon {
@@ -55,6 +62,14 @@ export const Container = styled.div`
         font-weight: 300;
     }
 
+    .curtidas .texto {
+        flex: 1;
+        display: flex !important;
+        flex-direction: row;
+        text-indent: 3px;
+        word-break: keep-all;
+    }
+
     .fundo .curtidas img {
         width: 20px;
         height: 20px;
@@ -65,4 +80,19 @@ export const Container = styled.div`
         margin-bottom: 18px;
     }
 
+    @media (max-width: 614px) {
+        margin-top: 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+    
+        :last-child {
+            margin-bottom: 72px;
+        }
+
+        :first-child {
+            margin-top: 0;
+        }
+    }
 `;

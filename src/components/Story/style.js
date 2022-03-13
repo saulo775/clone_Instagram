@@ -20,14 +20,14 @@ export const Container = styled.div`
         height: 66px;
         width: 66px;
         background-image: url('../assets/img/story-circle.svg');
+        
+        img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+        }
     }
-
-    .imagem img {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-    }
-
+    
     .usuario {
         width: 66px;
         overflow: hidden;

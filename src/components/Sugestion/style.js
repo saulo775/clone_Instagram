@@ -9,17 +9,16 @@ export const Container = styled.div`
     
     .usuario {
         display: flex;
-    }
 
-    .usuario .texto {
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .usuario .texto :last-child {
-        color: #8E8E8E;
-        font-weight: 400;
+        .texto {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            :last-child {
+                color: #8E8E8E;
+                font-weight: 400;
+            }
+        }
     }
 `;
